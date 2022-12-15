@@ -8,7 +8,7 @@ CREATE TABLE clientes (
 		nombre_cliente VARCHAR(20) NOT NULL,
 		destino VARCHAR(20) NOT NULL,
 		agencia_naviera VARCHAR(20) NOT NULL,
-		id_producto VARCHAR(20) NOT NULL,
+		id_producto INT NOT NULL,
 		ref_insumos_requeridos DECIMAL(50) NOT NULL,
 		id_contenedor INT(10) NOT NULL,
 		cantidad_contenedores INT(100) NOT NULL,
