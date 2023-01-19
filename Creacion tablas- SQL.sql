@@ -12,7 +12,7 @@ CREATE TABLE clientes (
 		ref_insumos_requeridos DECIMAL(50) NOT NULL,
 		id_contenedor INT(10) NOT NULL,
 		cantidad_contenedores INT(100) NOT NULL,
-		CONSTRAINT PK_clientes PRIMARY KEY (id_cliente)
+		CONSTRAINT PK_clientes PRIMARY KEY (id_cliente) ON DELETE CASCADE
 );
 
 
@@ -56,7 +56,7 @@ CREATE TABLE agencias_navieras (
 		tiempo_transito DECIMAL(10) NOT NULL,
 		id_contenedor INT(10),
 		CONSTRAINT PK_agencias_navieras PRIMARY KEY (id_naviera),
-        CONSTRAINT FK_agencias_navieras_clientes FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente)
+        CONSTRAINT FK_agencias_navieras_clientes FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente) ON DELETE CASCADE
 );
 
 
