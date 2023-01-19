@@ -12,7 +12,7 @@ CREATE TABLE clientes (
 		ref_insumos_requeridos DECIMAL(50) NOT NULL,
 		id_contenedor INT(10) NOT NULL,
 		cantidad_contenedores INT(100) NOT NULL,
-		CONSTRAINT PK_clientes PRIMARY KEY (id_cliente) ON DELETE CASCADE
+		CONSTRAINT PK_clientes PRIMARY KEY (id_cliente) 
 );
 
 
